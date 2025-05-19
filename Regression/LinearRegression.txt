@@ -1,0 +1,29 @@
+Linear Regression:
+ - Predicting the value of unknown data by using another related and known data values
+
+ - Training Set: The data used to train the model
+ - x -> input-variable/feature
+ - y -> output-variable/target
+ - (i-th) training example -> (x(i),y(i))
+ - (training set) -> (Learning Algorithm) -> (function/hypothesis f)
+ - feature (x) -> model (f) -> estimation(y) ẏ (y^) or y - hat
+ - y is the true value for that training example, referred to as the output 
+   variable, or “target”.
+
+ - f(subscript{w,b})(x) = wx + b || f(x) = wx + b this is the cost function
+ - w,b -> parameters, coefficients, weights
+
+ - In machine learning parameters of the model are the variables you can adjust 
+   during training in order to improve the model. 
+ - This is linear regression with one variable (single feature x)
+ - In f(x) = wx + b, w -> slope, b -> y-intercept
+
+ - while making predictions we get y - hat (i) = f(x(i)) i.e. for i-th feature 
+   we predicted i-th y - hat, while i-th y is the real target value
+ - f(x(i)) = w(x(i)) + b //   \hat{y}_i = w \cdot x_i + b 
+ - error = (y - hat) - y
+ - compute error square
+ - compute (summation from i = 1 to n of error square)/2m
+ - this is squared error cost function represented by J(w,b)
+ 
+
